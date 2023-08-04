@@ -1,0 +1,31 @@
+<odoo>
+    <data>
+        <record id="action_agriculturevc_actor_form" model="ir.actions.act_window">
+            <field name="name">Actors</field>
+            <field name="res_model">agriculturevc.actor</field>
+            <field name="view_mode">tree,kanban,form</field>
+            <field name="view_id" ref="view_agriculturevc_actor_form"/>
+        </record>
+
+        <record id="action_agriculturevc_input_form" model="ir.actions.act_window">
+            <field name="name">Inputs</field>
+            <field name="res_model">agriculturevc.input</field>
+            <field name="view_mode">tree,kanban,form</field>
+            <field name="view_id" ref="view_agriculturevc_input_form"/>
+        </record>
+
+        <record id="action_agriculturevc_asset_form" model="ir.actions.act_window">
+            <field name="name">Assets</field>
+            <field name="res_model">agriculturevc.asset</field>
+            <field name="view_mode">tree,kanban,form</field>
+            <field name="view_id" ref="view_agriculturevc_asset_form"/>
+        </record>
+
+        <record id="action_agriculturevc_action_form" model="ir.actions.act_window">
+            <field name="name">Actions</field>
+            <field name="res_model">agriculturevc.action</field>
+            <field name="view_mode">tree,kanban,form</field>
+            <field name="view_id" ref="view_agriculturevc_action_form"/>
+        </record>
+    </data>
+</odoo>

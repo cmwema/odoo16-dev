@@ -1,25 +1,21 @@
 # -*- coding: utf-8 -*-
 {
     'name': "agriculturevc",
-
-    'summary': """
-        """,
-
-    'description': """
-        
-    """,
-
     'author': "Caleb Mwema",
     'website': "https://brw-automation.odoo.com/",
 
-    'category': 'Uncategorized',
+    'category': 'Manufacturing',
     'version': '0.1',
-
-    # any module necessary for this one to work correctly
+    'sequence': -400,
+    'installable': True,
+    'application': True,
+    'auto_install': False,
     'depends': ['base'],
 
     'data': [
-
+        'security/ir.model.access.csv',
+        'views/venue_view.xml',
+        'views/main.xml',
     ],
     # # only loaded in demonstration mode
     # 'demo': [

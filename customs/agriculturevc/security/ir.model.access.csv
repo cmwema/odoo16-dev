@@ -1,2 +1,6 @@
 id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
-access_agriculturevc_agriculturevc,agriculturevc.agriculturevc,model_agriculturevc_agriculturevc,base.group_user,1,1,1,1
+access_agriculturevc_venue,access.agriculturevc.venue,model_agriculturevc_venue,,1,1,1,1
+access_agriculturevc_actor,access.agriculturevc.actor,model_agriculturevc_actor,,1,1,1,1
+access_agriculturevc_input,access.agriculturevc.input,model_agriculturevc_input,,1,1,1,1
+access_agriculturevc_asset,access.agriculturevc.asset,model_agriculturevc_asset,,1,1,1,1
+access_agriculturevc_action,access.agriculturevc.action,model_agriculturevc_action,,1,1,1,1

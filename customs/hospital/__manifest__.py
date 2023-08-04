@@ -1,13 +1,11 @@
 # -*- coding: utf-8 -*-
 {
     'summary': """
-        Short (1 phrase/line) summary of the module's purpose, used as
-        subtitle on modules listing or apps.openerp.com""",
-
+        """,
+    "name" : 'Hospital',
     'description': """
         Long description of module's purpose
     """,
-    "application": True,
     'installable': True,
     'application': True,
     'auto_install': False,
