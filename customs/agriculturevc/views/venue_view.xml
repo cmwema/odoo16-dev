@@ -4,22 +4,22 @@
             <field name="name">agriculturevc.venue.form</field>
             <field name="model">agriculturevc.venue</field>
             <field name="arch" type="xml">
-                <form>
-                    <sheet>
+                <scroll direction="horizontal">
+                    <form>
                         <group>
                             <group>
                                 <field name="name"/>
                                 <field name="actor_ids"/>
-                                <field name="asset_ids"/>
+                            </group>
+                            <group>
                                 <field name="input_ids"/>
                                 <field name="action_ids"/>
                             </group>
-                            <group>
-                                <field name="creation_date"/>
-                            </group>
+<!--                            <field name="asset_ids"/>-->
                         </group>
-                    </sheet>
-                </form>
+                    </form>
+                </scroll>
+
             </field>
         </record>
         <record id="view_agriculturevc_venue_list" model="ir.ui.view">
@@ -32,7 +32,6 @@
                     <field name="asset_ids" widget="many2many_tags" options="{'no_create': True}"/>
                     <field name="input_ids" widget="many2many_tags" options="{'no_create': True}"/>
                     <field name="action_ids" widget="many2many_tags" options="{'no_create': True}"/>
-                    <field name="creation_date"/>
                 </tree>
             </field>
         </record>
@@ -50,7 +49,6 @@
                                     <field name="asset_ids" widget="many2many_tags" options="{'no_create': True}"/>
                                     <field name="input_ids" widget="many2many_tags" options="{'no_create': True}"/>
                                     <field name="action_ids" widget="many2many_tags" options="{'no_create': True}"/>
-                                    <field name="creation_date"/>
                                 </div>
                             </div>
                         </t>

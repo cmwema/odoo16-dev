@@ -13,5 +13,16 @@
                   action="action_agriculturevc_venue"
                   sequence="10"/>
 
+        <!--   Assets     -->
+        <menuitem id="menu_assets_root"
+                  name="Assets"
+                  parent="menu_agriculturevc"
+                  sequence="10"/>
+
+        <menuitem id="menu_asset"
+                  name="Assets"
+                  parent="menu_assets_root"
+                  action="action_agriculturevc_asset"
+                  sequence="10"/>
     </data>
 </odoo>
