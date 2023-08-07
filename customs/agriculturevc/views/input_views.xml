@@ -35,6 +35,75 @@
 
             </field>
         </record>
+
+        <record id="view_agriculturevc_input_tree" model="ir.ui.view">
+            <field name="name">agriculturevc.input.tree</field>
+            <field name="model">agriculturevc.input</field>
+            <field name="arch" type="xml">
+                <tree string="Inputs">
+                    <field name="name"/>
+                    <!--                    <field name="is_available"/>-->
+                    <field name="value"/>
+                    <!--                    <field name="actor_ids" widget="many2many_tags" options="{'no_create': True}"/>-->
+                    <!--                    <field name="venue_ids" widget="many2many_tags" options="{'no_create': True}"/>-->
+                    <!--                    <field name="asset_ids" widget="many2many_tags" options="{'no_create': True}"/>-->
+                    <!--                    <field name="action_ids" widget="many2many_tags" options="{'no_create': True}"/>-->
+                    <field name="category"/>
+                    <field name="resource_type" string="Resource Type"/>
+                    <field name="skill_level" string="Skill Level"/>
+                    <field name="labor_type" string="Labor Type"/>
+                    <field name="knowledge_type" string='Knowledge Type'/>
+                    <field name="tool_type" string='Tool Type'/>
+                </tree>
+            </field>
+        </record>
+
+        <record id="view_agriculturevc_input_kanban" model="ir.ui.view">
+            <field name="name">agriculturevc.input.kanban</field>
+            <field name="model">agriculturevc.input</field>
+            <field name="arch" type="xml">
+                <kanban default_group_by="category">
+                    <field name="name"/>
+                    <field name="category"/>
+                    <field name="value"/>
+                    <field name="actor_ids" widget="many2many_tags"/>
+                    <field name="venue_ids" widget="many2many_tags"/>
+                    <field name="asset_ids" widget="many2many_tags"/>
+                    <field name="action_ids" widget="many2many_tags"/>
+
+                    <templates>
+                        <t t-name="kanban-box">
+                            <div class="oe_kanban_global_click">
+                                <div class="oe_kanban_content">
+                                    <div class="oe_kanban_left">
+                                        <field name="name"/>
+                                        <field name="category" invisible="1"/>
+                                        <field name="value"/>
+                                        <field name="resource_type"/>
+
+                                    </div>
+                                    <div class="oe_kanban_right">
+                                        <field name="skill_level"/>
+                                        <field name="labor_type"/>
+                                        <field name="knowledge_type"/>
+                                        <field name="tool_type"/>
+                                    </div>
+                                </div>
+                                <div class="oe_kanban_bottom">
+                                    <field name="category"/>
+                                    <field name="resource_type"/>
+                                    <field name="skill_level"/>
+                                    <field name="labor_type"/>
+                                    <field name="knowledge_type"/>
+                                    <field name="tool_type"/>
+                                </div>
+                            </div>
+                        </t>
+                    </templates>
+                </kanban>
+            </field>
+        </record>
+
         <record id="action_agriculturevc_input" model="ir.actions.act_window">
             <field name="name">Input</field>
             <field name="res_model">agriculturevc.input</field>

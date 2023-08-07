@@ -105,7 +105,7 @@ class Input(models.Model):
         ('manual', 'Manual'),
         ('mechanized', 'Mechanized'),
         ('digital', 'Digital'),
-    ], string='Tool Type', default='experiential')
+    ], string='Tool Type')
 
 
 class Asset(models.Model):
