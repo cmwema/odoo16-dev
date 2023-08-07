@@ -1,0 +1,53 @@
+<odoo>
+    <data>
+        <record id="view_agriculturevc_actor_from" model="ir.ui.view">
+            <field name="name">agriculturevc.actor.form</field>
+            <field name="model">agriculturevc.actor</field>
+            <field name="arch" type="xml">
+                <form>
+                    <sheet>
+                        <group>
+                            <group>
+                                <field name="name"/>
+                                <field name="role"/>
+                            </group>
+                        </group>
+                         <group>
+                            <group>
+                                <field name="input_ids" widget="many2many_tags" options="{'no_create': True}"/>
+                                <field name="venue_ids" widget="many2many_tags" options="{'no_create': True}"/>
+                                <field name="asset_ids" widget="many2many_tags" options="{'no_create': True}"/>
+                                <field name="action_ids" widget="many2many_tags" options="{'no_create': True}"/>
+                            </group>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+        <record id="view_agriculturevc_actor_tree" model="ir.ui.view">
+            <field name="name">agriculturevc.actor.tree</field>
+            <field name="model">agriculturevc.actor</field>
+            <field name="arch" type="xml">
+                <tree string="Assets">
+                    <field name="name"/>
+                    <field name="role" />
+                    <field name="input_ids" widget="many2many_tags"/>
+                    <field name="venue_ids" widget="many2many_tags"/>
+                    <field name="asset_ids" widget="many2many_tags"/>
+                    <field name="action_ids" widget="many2many_tags"/>
+                </tree>
+            </field>
+        </record>
+
+        <record id="action_agriculturevc_actor" model="ir.actions.act_window">
+            <field name="name">Actor</field>
+            <field name="res_model">agriculturevc.actor</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="view_mode">tree,kanban,form</field>
+            <field name="context">{}</field>
+            <field name="help" type="html">
+                <p class="o_view_nocontent_smiling_face">No Actors found. Let's create one!</p>
+            </field>
+        </record>
+    </data>
+</odoo>

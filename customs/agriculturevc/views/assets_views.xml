@@ -91,7 +91,7 @@
                 </kanban>
             </field>
         </record>
-
+    
         <record id="action_agriculturevc_asset" model="ir.actions.act_window">
             <field name="name">Asset</field>
             <field name="res_model">agriculturevc.asset</field>
