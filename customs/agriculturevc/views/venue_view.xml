@@ -6,17 +6,21 @@
             <field name="arch" type="xml">
                 <scroll direction="horizontal">
                     <form>
-                        <group>
+                        <sheet>
                             <group>
-                                <field name="name"/>
-                                <field name="actor_ids"/>
+                                <group>
+                                    <field name="name"/>
+                                    <field name="actor_ids"/>
+                                </group>
+                                <group>
+                                    <field name="input_ids"/>
+                                    <field name="action_ids"/>
+                                </group>
                             </group>
-                            <group>
-                                <field name="input_ids"/>
-                                <field name="action_ids"/>
-                            </group>
-<!--                            <field name="asset_ids"/>-->
-                        </group>
+
+                        </sheet>
+                        <!--                            <field name="asset_ids"/>-->
+
                     </form>
                 </scroll>
 

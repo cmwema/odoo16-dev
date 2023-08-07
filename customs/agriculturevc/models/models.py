@@ -78,7 +78,7 @@ class Input(models.Model):
     resource_type = fields.Selection([
         ('natural', 'Natural'),
         ('processed', 'Processed'),
-    ], string='Role')
+    ], string='Resource Type')
 
     # labor
     skill_level = fields.Selection([
@@ -98,14 +98,14 @@ class Input(models.Model):
         ('validated', 'Validated'),
         ('unvalidated', 'Unvalidated'),
 
-    ], string='Knowledge type', default='experiential')
+    ], string='Knowledge Type', default='experiential')
 
     # tool
     tool_type = fields.Selection([
         ('manual', 'Manual'),
         ('mechanized', 'Mechanized'),
         ('digital', 'Digital'),
-    ], string='Knowledge type', default='experiential')
+    ], string='Tool Type', default='experiential')
 
 
 class Asset(models.Model):

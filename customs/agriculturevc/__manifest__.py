@@ -17,6 +17,7 @@
         'views/venue_view.xml',
         'views/assets_views.xml',
         'views/actors_views.xml',
+        'views/input_views.xml',
         'views/main.xml',
     ],
     # # only loaded in demonstration mode

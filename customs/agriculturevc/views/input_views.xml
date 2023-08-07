@@ -1,0 +1,49 @@
+<odoo>
+    <data>
+        <record id="view_agriculturevc_input_form" model="ir.ui.view">
+            <field name="name">agriculturevc.input.form</field>
+            <field name="model">agriculturevc.input</field>
+            <field name="arch" type="xml">
+                <form>
+                    <sheet>
+                        <group>
+                            <group>
+                                <field name="name"/>
+                                <field name="is_available"/>
+                                <field name="value"/>
+                                <field name="actor_ids" widget="many2many_tags" options="{'no_create': True}"/>
+                                <field name="venue_ids" widget="many2many_tags" options="{'no_create': True}"/>
+                                <field name="asset_ids" widget="many2many_tags" options="{'no_create': True}"/>
+                                <field name="action_ids" widget="many2many_tags" options="{'no_create': True}"/>
+                            </group>
+                            <group>
+                                <field name="category"/>
+                                <field name="resource_type" string="Resource Type"
+                                       attrs="{'invisible' : [('category', '!=', 'resources')]}"/>
+                                <field name="skill_level" string="Skill Level"
+                                       attrs="{'invisible' : [('category', '!=', 'labor')]}"/>
+                                <field name="labor_type" string="Labor Type"
+                                       attrs="{'invisible' : [('category', '!=', 'labor')]}"/>
+                                <field name="knowledge_type" string='Knowledge Type'
+                                       attrs="{'invisible' : [('category', '!=', 'knowledge')]}"/>
+                                <field name="tool_type" string='Tool Type'
+                                       attrs="{'invisible' : [('category', '!=', 'tools')]}"/>
+                            </group>
+                        </group>
+                    </sheet>
+                </form>
+
+            </field>
+        </record>
+        <record id="action_agriculturevc_input" model="ir.actions.act_window">
+            <field name="name">Input</field>
+            <field name="res_model">agriculturevc.input</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="view_mode">tree,kanban,form</field>
+            <field name="context">{}</field>
+            <field name="help" type="html">
+                <p class="o_view_nocontent_smiling_face">No Inputs found. Let's create one!</p>
+            </field>
+        </record>
+    </data>
+</odoo>

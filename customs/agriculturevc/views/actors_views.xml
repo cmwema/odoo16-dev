@@ -1,6 +1,6 @@
 <odoo>
     <data>
-        <record id="view_agriculturevc_actor_from" model="ir.ui.view">
+        <record id="view_agriculturevc_actor_form" model="ir.ui.view">
             <field name="name">agriculturevc.actor.form</field>
             <field name="model">agriculturevc.actor</field>
             <field name="arch" type="xml">
