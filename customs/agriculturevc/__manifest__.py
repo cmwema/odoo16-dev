@@ -18,6 +18,7 @@
         'views/assets_views.xml',
         'views/actors_views.xml',
         'views/input_views.xml',
+        'views/actions_views.xml',
         'views/main.xml',
     ],
     # # only loaded in demonstration mode

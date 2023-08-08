@@ -5,19 +5,19 @@
         <menuitem id="menu_venues_root"
                   name="Venues"
                   parent="menu_agriculturevc"
-                  />
+        />
 
         <menuitem id="menu_venue"
                   name="Venues"
                   parent="menu_venues_root"
                   action="action_agriculturevc_venue"
-                  />
+        />
 
         <!--   Assets     -->
         <menuitem id="menu_assets_root"
                   name="Assets"
                   parent="menu_agriculturevc"
-                  />
+        />
 
         <menuitem id="menu_asset"
                   name="Assets"
@@ -27,16 +27,16 @@
 
         <!--    Actors    -->
         <menuitem id="menu_actions_root"
-                  name="Actors"
+                  name="Actions"
                   parent="menu_agriculturevc"
-                  />
+        />
 
         <menuitem id="menu_actor"
                   name="Actors"
                   parent="menu_actions_root"
                   action="action_agriculturevc_actor"
-              />
-
+        />
+        <!--    Inputs    -->
         <menuitem id="menu_inputs_root"
                   name="Inputs"
                   parent="menu_agriculturevc"
@@ -47,5 +47,11 @@
                   parent="menu_inputs_root"
                   action="action_agriculturevc_input"
         />
+        <!--    Actions     -->
+
+        <menuitem id="menu_actions"
+                  name="Actions"
+                  parent="menu_actions_root"
+                  action="action_agriculturevc_action"/>
     </data>
 </odoo>
